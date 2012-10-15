@@ -4,21 +4,19 @@
 
 import math
 
-print "\t\t\t\t  Jacob Hayes"
-
 print "\n\t\t\t     *Quadratic Formula*"
 print "\n\t\t\t        *Ax^2+Bx+C=0*\n"
 
-A = float(raw_input("Enter the Leading Coefficient: "))
-B = float(raw_input("Enter the X Coefficient: "))
-C = float(raw_input("Enter the Constant: "))
+A = float(raw_input("Enter the leading coefficient (A): "))
+B = float(raw_input("Enter the X coefficient (B): "))
+C = float(raw_input("Enter the constant (C): "))
 
 Discriminant = (B * B) - (4 * A * C)
 Denominator = 2 * A
 
-print "\nDiscriminant: (", B, "*", B, ") - ( 4.0 *", A, "*", C, ")" 
+print "\nDiscriminant: (", B, ")^2 - ( 4.0 *", A, "*", C, ")" 
 print "Discriminant: (", B * B, ") - (", 4 * A * C, ")"
-print "The Discriminant is", Discriminant
+print "The discriminant is", Discriminant
 
 raw_input("\nPress enter to continue.")
 
@@ -26,15 +24,39 @@ if Discriminant >= 0:
     Quadratic_X = (-B + (math.sqrt(Discriminant)) / Denominator)
     Quadratic_X2 = (-B - (math.sqrt(Discriminant)) / Denominator)
 
-    print "\nX =", Quadratic_X, "and", Quadratic_X2, "."
-
-    raw_input("\nPress enter to continue.")
-
     print "           _________"
     print -B, "+/- \/", Discriminant
     print "___________________________"
     print "\t", Denominator
+    
+    print -B, "+/- ", Discriminant
+    print "___________________________"
+    print "\t", Denominator
+    
+    print "~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    
+    print -B, "+", Discriminant
+    print "___________________________"
+    print "\t", Denominator
+    
+    print -B + Discriminant
+    print "___________________________"
+    print "\t", Denominator
+    
+    print "\t\tAND"
+    
+    print -B, "-", Discriminant
+    print "___________________________"
+    print "\t", Denominator
+    
+    print -B - Discriminant
+    print "___________________________"
+    print "\t", Denominator
+    
+    
     print "\nReduce if possible."
+    
+    print "\nX =", Quadratic_X, "and", Quadratic_X2, "."
 
 elif Discriminant < 0:
     print "           _____"
