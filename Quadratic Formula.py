@@ -11,7 +11,7 @@ A = float(raw_input("Enter the leading coefficient (A): "))
 B = float(raw_input("Enter the X coefficient (B): "))
 C = float(raw_input("Enter the constant (C): "))
 
-Discriminant = (B * B) - (4 * A * C)
+Discriminant = (B ** 2) - (4 * A * C) 
 Denominator = 2 * A
 
 print "\nDiscriminant: (", B, ")^2 - ( 4.0 *", A, "*", C, ")" 
